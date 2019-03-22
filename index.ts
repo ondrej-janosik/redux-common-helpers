@@ -2,7 +2,7 @@
  * Returns a new object with partial update
  */
 export const withObjectUpdated = <O>(obj: O, update: Partial<O>) => {
-  return { ...((obj as unknown) as object), ...(update as object) };
+  return { ...((obj as unknown) as object), ...(update as object) } as O;
 };
 
 /**
