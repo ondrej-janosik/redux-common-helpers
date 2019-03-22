@@ -1,14 +1,17 @@
 /**
  * Returns a new object with partial update
  */
-export const withObjectUpdated = <O>(obj: O, update: Partial<O>) => {
-  return { ...obj, ...update };
+export const withObjectUpdated = <O extends object>(
+  obj: O,
+  update: Partial<O>,
+) => {
+  return { ...(obj as object), ...(update as object) };
 };
 
 /**
  * Returns a new array with one item updated
  */
-export const withItemUpdated = <L, K extends keyof L>(
+export const withItemUpdated = <L extends object, K extends keyof L>(
   list: L[],
   key: K,
   value: L[K],
