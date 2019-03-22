@@ -1,0 +1,27 @@
+{
+  "name": "redux-common-helpers",
+  "version": "0.1.0",
+  "description": "Set of helpers function for creating redux reducers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ondrej-janosik/redux-common-helpers.git"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  },
+  "keywords": [
+    "redux",
+    "helpers",
+    "immutable"
+  ],
+  "author": "Ondřej Janošík <ondrej.janosik42@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ondrej-janosik/redux-common-helpers/issues"
+  },
+  "homepage": "https://github.com/ondrej-janosik/redux-common-helpers#readme"
+}
